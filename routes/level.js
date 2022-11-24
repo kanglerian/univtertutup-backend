@@ -12,4 +12,13 @@ router.get('/', async (req, res) => {
   }
 });
 
+router.post('/', async (req, res) => {
+  try {
+    await Level.create(req.body);
+    res.status(200).send('Data ditambahkan');
+  } catch (error) {
+    res.send("can't access");
+  }
+});
+
 module.exports = router;
