@@ -1,0 +1,27 @@
+GET http://localhost:3001/program
+
+###
+POST http://localhost:3001/program
+content-type: application/json
+
+{   
+    "idLevel": 2,
+    "name": "Hanin"
+}
+
+###
+PATCH http://localhost:3001/program/19
+content-type: application/json
+
+{
+    "idLevel": 10,
+    "name": "Hanin"
+}
+
+###
+DELETE http://localhost:3001/program
+content-type: application/json
+
+{
+    "id": 19
+}
