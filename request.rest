@@ -19,9 +19,9 @@ content-type: application/json
 }
 
 ###
-DELETE http://localhost:3001/program
+DELETE http://localhost:3001/registrar
 content-type: application/json
 
 {
-    "id": 19
+    "id": 41
 }
